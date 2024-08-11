@@ -7,6 +7,9 @@
   <!--ICONS-->
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
+  <!--Toastify CSS-->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
   <!--FONTS-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +17,8 @@
 
   <!--Style-->
   <link rel="stylesheet" href="./styles/output.css">
+
+  <script type="module" src="script.js" defer></script>
 
   <title>Hamburgueria Online</title>
 </head>
@@ -29,7 +34,7 @@
 
       <span class="text-white font-medium italic">Rua Santa Joana 24, Olinda - Recife</span>
 
-      <div class="bg-green-500 px-4 py-1 rounded-lg mt-5" id="date-span">
+      <div class="bg-red-500 px-4 py-1 rounded-lg mt-5" id="date-span">
         <span class="text-white font-medium">Seg á Dom - 18:00 as 22:00</span>
       </div>
     </div>
@@ -172,16 +177,16 @@
   </div>
 
   <!--MODAL CART-->
-  <div class="bg-black/50 items-center justify-center w-full h-full fixed inset-0 z-[99] hidden">
-    <div class="bg-white h-60 w-[90%] md:w-[60%] p-5 rounded-md">
+  <div id="cart-modal" class="bg-black/50 items-center justify-center w-full h-full fixed inset-0 z-[99] hidden">
+    <div class="bg-white max-h-[70%] overflow-y-auto w-[90%] md:w-[60%] p-5 rounded-md">
       <h2 class="font-bold text-2xl mb-2 text-center ">Carrinho</h2>
 
       <div id="cart-items" class="flex flex-col justify-between mb-2 ">
 
       </div>
 
-      <p class="font-bold ">Total: 
-        <span id="cart-total">
+      <p class="font-semibold ">Total: 
+        <span id="cart-total" class="font-extrabold">
         0.00
         </span>
     </p>
@@ -193,7 +198,7 @@
       class="w-full border-2 p-1 rounded my-1"
       placeholder="Digite seu endereço completo">
 
-      <p class="text-red-500 hidden" id="address-warning ">Digite seu endereço completo</p>
+      <p class="text-red-500 hidden" id="address-warning">Digite seu endereço completo</p>
 
       <div class="mt-5 w-full flex items-center justify-between">
         <button 
@@ -215,12 +220,13 @@
 
   <footer class="w-full flex items-center justify-center py-3 bg-red-500 fixed bottom-0 z-40">
     <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
-      <span id="cart-count">(0)</span>
+      (<span id="cart-count">0</span>)
       Ver meu carrinho
       <i class="ph ph-shopping-cart text-lg text-white"></i>
     </button>
   </footer>
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 
 </html>
