@@ -24,7 +24,7 @@ Cardápio de uma hambúrgueria Online - Para pedidos no Whatsapp <br/>
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML e CSS e Javascript
+- HTML e TailwindCSS e Javascript
 - Git e Github
 
 
