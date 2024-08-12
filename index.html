@@ -5,12 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
   <!--META TAG OG-->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Dev Burguer - A melhor Hambugueria Dev" />
   <meta property="og:image" content="URL da imagem" />
   <meta property="og:description" content="O melhor Hambuguer caseiro" />
   <meta property="og:site_name" content="DevBurguer" />
+
+  <meta name="description" content="Experimente os melhores hambúrgueres artesanais na Dev Burguer. Feitos com ingredientes frescos e sabor inigualável. Peça online agora!">
+
+  <meta name="keywords" content="hambúrgueres, hamburgueria, comida caseira, delivery, Dev Burguer">
+  <meta name="author" content="Dev Burguer">
+  <meta name="robots" content="index, follow">
+
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
 
   <!--ICONS-->
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -21,14 +30,14 @@
   <!--FONTS-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" as="style">
 
   <!--Style-->
   <link rel="stylesheet" href="./styles/output.css">
 
   <script type="module" src="script.js" defer></script>
 
-  <title>Hamburgueria Online</title>
+  <title>Dev Burguer - A Melhor Hamburgueria Caseira Online</title>
 </head>
 
 <body>
@@ -60,8 +69,7 @@
 
         <div>
           <p class="font-bold">Hambuguer Smash</p>
-          <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, dignissimos sed. Veniam
-            labore voluptatum modi praesentium.</p>
+          <p class="text-sm">Um hambúrguer com carne fininha, prensada na chapa, crocante por fora e suculenta por dentro.</p>
 
           <div class="mt-3 flex items-center justify-between gap-2">
             <p class="font-bold text-lg">R$ 18.90</p>
@@ -80,8 +88,7 @@
 
         <div>
           <p class="font-bold">Hambuguer Duplo</p>
-          <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, dignissimos sed. Veniam
-            labore voluptatum modi praesentium.</p>
+          <p class="text-sm">Duas camadas de carne suculenta, grelhadas no ponto certo, para quem quer mais sabor e sustância.</p>
 
           <div class="mt-3 flex items-center justify-between gap-2">
             <p class="font-bold text-lg">R$ 28.90</p>
@@ -96,12 +103,11 @@
 
       <div class="flex gap-2">
         <img class="size-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" src="./assets/hamb-3.png"
-          alt="Hamburguer Cheasse ">
+          alt="Hamburguer Cheese">
 
         <div>
-          <p class="font-bold">Hambuguer Cheasse</p>
-          <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, dignissimos sed. Veniam
-            labore voluptatum modi praesentium.</p>
+          <p class="font-bold">Hambuguer Cheese</p>
+          <p class="text-sm">Clássico hambúrguer com uma fatia generosa de queijo derretido sobre a carne, perfeito para os amantes de queijo..</p>
 
           <div class="mt-3 flex items-center justify-between gap-2">
             <p class="font-bold text-lg">R$ 32.90</p>
@@ -116,18 +122,17 @@
 
       <div class="flex gap-2">
         <img class="size-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" src="./assets/hamb-4.png"
-          alt="Hamburguer com queijo">
+          alt="Hambúrguer Supremo">
 
         <div>
-          <p class="font-bold">Hambuguer com queijo</p>
-          <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, dignissimos sed. Veniam
-            labore voluptatum modi praesentium.</p>
+          <p class="font-bold">Hambúrguer Supremo</p>
+          <p class="text-sm line-clamp-2">Um hambúrguer robusto com carne suculenta, queijo cheddar cremoso, bacon crocante, alface fresca, tomate suculento e um toque de maionese especial, tudo isso em um pão macio e dourado. O equilíbrio perfeito entre sabor e textura.</p>
 
           <div class="mt-3 flex items-center justify-between gap-2">
             <p class="font-bold text-lg">R$ 30.90</p>
 
             <button class="bg-gray-900 hover:bg-gray-900/80 transition-colors px-4 rounded add-to-cart-btn"
-              data-name="Hamburguer com queijo" data-price="30.90">
+              data-name="Hamburguer Supremo" data-price="30.90">
               <i class="ph ph-shopping-cart text-lg text-white"></i>
             </button>
           </div>
@@ -172,7 +177,7 @@
           <div class="mt-3 flex items-center justify-between gap-2">
             <p class="font-bold text-lg">R$ 8.90</p>
 
-            <button class="bg-gray-900 hover:bg-gray-900/80 transition-colors px-4 rounded add-to-cart-btn"
+            <button class="bg-gray-900 hover:bg-gray-900/80 transition-colors px-4 py-1 rounded add-to-cart-btn"
               data-name="Coca Lata" data-price="8.90">
               <i class="ph ph-shopping-cart text-lg text-white"></i>
             </button>

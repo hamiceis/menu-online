@@ -67,6 +67,7 @@ function addToCart(name, price) {
     existingItem.quantity += 1;
   } else {
     const newItem = { name, price, quantity: 1 };
+    showToast(`${name} adicionado ao carrinho`, "linear-gradient(to right, #22e675, #22e55e)");
     cart.push(newItem);
   }
   updateCartModal();
